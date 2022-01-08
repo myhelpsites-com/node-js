@@ -1,6 +1,6 @@
 const express = require('express') //importacao do pacote
 const app = express() //instanciando express
-app.get('/', function (req, res) { //endereco da requisicao onde e retornado hello world
+app.get('/api/cursos', function (req, res) { //endereco da requisicao onde e retornado hello world
     (async () => {
         const db = require("./db");
         console.log('Começou!');
@@ -19,3 +19,10 @@ app.get('/', function (req, res) { //endereco da requisicao onde e retornado hel
     
 })
 app.listen(8000) //execucao do servidor
+
+
+
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
