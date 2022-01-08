@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 // teste
-fs.readFile("gabriel.html",(err, data) =>{
+fs.readFile("teste/gabriel.html",(err, data) =>{
 console.log(data.toString())
 let str = data.toString();
 // let newStr = str.split("/");
